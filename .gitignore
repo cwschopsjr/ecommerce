@@ -6,8 +6,7 @@ __pycache__
 db.sqlite3
 static/
 media/
-contact/migrations
-project/local_settings.py
+loja/migrations
 
 # Backup files #
 *.bak
