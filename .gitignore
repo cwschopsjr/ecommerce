@@ -7,6 +7,9 @@ db.sqlite3
 static/
 media/
 loja/migrations
+pedido/migrations
+perfil/migrations
+produto/migrations
 
 # Backup files #
 *.bak
