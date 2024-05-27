@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'produto',
     'pedido',
+    'perfil',
     
     # Remover ao término do desenvolvimento
     'debug_toolbar',
