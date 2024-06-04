@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.forms import ValidationError
-from Utils.validacpf import valida_cpf
+from utils.validacpf import valida_cpf
 
 import re
 
