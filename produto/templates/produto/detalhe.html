@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load omfilters %}
 
-{% block titulo %}{{ produto.nome }} | {% endblock %}
+{% block title %}{{ produto.nome }} | {% endblock %}
 
 {% block content %}
 <div class="row">
@@ -34,7 +34,7 @@
             </p>
 
             <form action="{% url 'produto:adicionaraocarrinho' %}" id="form-add-to-cart">
-                {% if produto.variacao_set.all %}
+                {% comment %} {% if produto.variacao_set.all %} {% endcomment %}
                     <div class="form-group">
                         <select id="select-variacoes" name="vid" class="form-control form-control-lg">
                             {% for variacao in produto.variacao_set.all %}
@@ -62,7 +62,7 @@
                             {% endfor %}
                         </select>
                     </div>
-                {% endif %}
+                {% comment %} {% endif %} {% endcomment %}
                 <div class="text-left">
                     <button type="submit" class="btn btn-primary btn-lg btn-block">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
